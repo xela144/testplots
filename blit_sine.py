@@ -7,9 +7,9 @@ import time
 x = np.arange(0, 2*np.pi, 0.1)
 y = np.sin(x)
 
-fig, axes = plt.subplots(nrows=3)
+fig, axes = plt.subplots(nrows=6)
 
-styles = ['r-', 'g-', 'y-']#, 'm-', 'k-', 'c-']
+styles = ['r-', 'g-', 'y-', 'm-', 'k-', 'c-']
 def plot(ax, style):
     return ax.plot(x, y, style, animated=True)[0]
 lines = [plot(ax, style) for ax, style in zip(axes, styles)]
